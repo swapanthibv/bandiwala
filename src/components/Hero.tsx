@@ -5,20 +5,20 @@ import { Search } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className="relative bg-gradient-to-b from-amber-50 to-white">
+    <div className="relative bg-gradient-to-b from-bandiwala-light/40 to-bandiwala-cream">
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-24">
         {/* Text Content */}
         <div className="flex flex-col justify-center z-10 animate-fade-in">
           <div className="max-w-lg">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight text-shadow-md">
               Discover the Taste of <span className="text-bandiwala-orange">Street Food</span> & <span className="text-bandiwala-red">Home Cooking</span>
             </h1>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-gray-600 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               From authentic street food to homemade delicacies. Order delivery, pickup, or book catering services - all in one place.
             </p>
             
             {/* Search Bar */}
-            <div className="mt-8 flex">
+            <div className="mt-8 flex animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <div className="w-full max-w-md relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <Search className="h-5 w-5 text-gray-400" />
@@ -29,22 +29,22 @@ const Hero = () => {
                   className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-l-full focus:ring-bandiwala-orange focus:border-bandiwala-orange shadow-sm"
                 />
               </div>
-              <Button className="bg-bandiwala-orange hover:bg-bandiwala-red text-white rounded-r-full px-8">
+              <Button className="bg-bandiwala-orange hover:bg-bandiwala-dark text-white rounded-r-full px-8 transition-all duration-300">
                 Search
               </Button>
             </div>
             
             {/* Statistics */}
-            <div className="mt-10 grid grid-cols-3 gap-4">
-              <div>
+            <div className="mt-10 grid grid-cols-3 gap-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+              <div className="bg-white/60 p-3 rounded-lg shadow-sm">
                 <p className="text-2xl font-bold text-bandiwala-orange">1000+</p>
                 <p className="text-sm text-gray-600">Vendors</p>
               </div>
-              <div>
+              <div className="bg-white/60 p-3 rounded-lg shadow-sm">
                 <p className="text-2xl font-bold text-bandiwala-orange">5000+</p>
                 <p className="text-sm text-gray-600">Dishes</p>
               </div>
-              <div>
+              <div className="bg-white/60 p-3 rounded-lg shadow-sm">
                 <p className="text-2xl font-bold text-bandiwala-orange">20+</p>
                 <p className="text-sm text-gray-600">Cities</p>
               </div>
@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
         
         {/* Image Section */}
-        <div className="hidden md:flex items-center justify-center relative animate-fade-in">
+        <div className="hidden md:flex items-center justify-center relative">
           <div className="relative w-full h-full">
             {/* Main image */}
             <img 
@@ -63,7 +63,7 @@ const Hero = () => {
             />
             
             {/* Floating food cards */}
-            <div className="absolute -top-10 -left-10 bg-white p-3 rounded-xl shadow-lg rotate-[-5deg]">
+            <div className="absolute -top-10 -left-10 bg-white p-3 rounded-xl shadow-lg rotate-[-5deg] animate-float">
               <img 
                 src="https://source.unsplash.com/photo-1618160702438-9b02ab6515c9" 
                 alt="Delicious dish" 
@@ -76,7 +76,7 @@ const Hero = () => {
               </div>
             </div>
             
-            <div className="absolute -bottom-5 -right-5 bg-white p-3 rounded-xl shadow-lg rotate-[5deg]">
+            <div className="absolute -bottom-5 -right-5 bg-white p-3 rounded-xl shadow-lg rotate-[5deg] animate-float" style={{ animationDelay: '1.5s' }}>
               <img 
                 src="https://source.unsplash.com/photo-1618160702438-9b02ab6515c9" 
                 alt="Home-cooked meal" 

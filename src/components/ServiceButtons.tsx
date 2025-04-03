@@ -8,21 +8,21 @@ const ServiceButtons = () => {
     {
       title: 'Food Delivery',
       description: 'Order your favorite food from local vendors',
-      icon: <ShoppingBag className="h-8 w-8 mb-4 text-white" />,
+      icon: <ShoppingBag className="h-8 w-8 mb-4 text-white animate-bounce-light" />,
       bgColor: 'bg-bandiwala-orange',
       action: () => console.log('Food Delivery clicked')
     },
     {
       title: 'Pickup',
       description: 'Skip the line, order ahead for pickup',
-      icon: <MapPin className="h-8 w-8 mb-4 text-white" />,
-      bgColor: 'bg-bandiwala-red',
+      icon: <MapPin className="h-8 w-8 mb-4 text-white animate-bounce-light" style={{ animationDelay: '0.3s' }} />,
+      bgColor: 'bg-bandiwala-dark',
       action: () => console.log('Pickup clicked')
     },
     {
       title: 'Catering',
       description: 'Perfect for events and gatherings',
-      icon: <Utensils className="h-8 w-8 mb-4 text-white" />,
+      icon: <Utensils className="h-8 w-8 mb-4 text-white animate-bounce-light" style={{ animationDelay: '0.6s' }} />,
       bgColor: 'bg-bandiwala-brown',
       action: () => console.log('Catering clicked')
     },
@@ -34,16 +34,17 @@ const ServiceButtons = () => {
         {services.map((service, index) => (
           <div 
             key={index}
-            className={`${service.bgColor} rounded-xl p-8 text-center shadow-md transform transition-all duration-300 hover:scale-105 cursor-pointer`}
+            className={`${service.bgColor} rounded-xl p-8 text-center shadow-md transform transition-all duration-500 hover:scale-105 cursor-pointer animate-fade-in`}
+            style={{ animationDelay: `${index * 0.2}s` }}
             onClick={service.action}
           >
             <div className="flex flex-col items-center">
               <div className="mb-2 flex items-center justify-center">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-semibold text-white mb-2">{service.title}</h3>
+              <h3 className="text-2xl font-semibold text-white mb-2 text-shadow-sm">{service.title}</h3>
               <p className="text-white text-opacity-90 mb-6">{service.description}</p>
-              <Button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold">
+              <Button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold transition-all duration-300 hover:shadow-lg">
                 Order Now
               </Button>
             </div>
