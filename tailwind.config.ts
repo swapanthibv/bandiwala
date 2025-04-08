@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,16 +62,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Bandiwala custom colors - Updated with new yellowish-orange theme
-				'bandiwala-orange': '#EEA125', // New primary orange
-				'bandiwala-light': '#F6E3AB', // Light yellowish accent
-				'bandiwala-dark': '#D08C1D', // Darker orange for contrast
-				'bandiwala-cream': '#FFF8E7', // Very light cream background
-				'bandiwala-red': '#E67E22', // Adjusted to be more orange-red
-				'bandiwala-brown': '#A05E03', // Adjusted to complement the orange theme
-				'bandiwala-green': '#16A34A', // Keeping green for status indicators
-				'bandiwala-yellow': '#F9D44C', // Brighter yellow
-				'bandiwala-bg': '#FFF8E7', // Updated background color
+				// Bandiwala custom colors - updated for yellow/orange theme
+				'bandiwala-yellow': '#FBBF24', // Amber-400
+				'bandiwala-orange': '#F97316', // Orange-500
+				'bandiwala-brown': '#92400E', // Amber-800
+				'bandiwala-bg': '#FFFBF5',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -113,64 +107,13 @@ export default {
 					'50%': {
 						transform: 'scale(1.03)'
 					}
-				},
-				'float': {
-					'0%, 100%': {
-						transform: 'translateY(0)'
-					},
-					'50%': {
-						transform: 'translateY(-10px)'
-					}
-				},
-				'slide-in-right': {
-					'0%': {
-						transform: 'translateX(100%)',
-						opacity: '0'
-					},
-					'100%': {
-						transform: 'translateX(0)',
-						opacity: '1'
-					}
-				},
-				'slide-in-left': {
-					'0%': {
-						transform: 'translateX(-100%)',
-						opacity: '0'
-					},
-					'100%': {
-						transform: 'translateX(0)',
-						opacity: '1'
-					}
-				},
-				'bounce-light': {
-					'0%, 100%': {
-						transform: 'translateY(0)',
-						animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)'
-					},
-					'50%': {
-						transform: 'translateY(-15px)',
-						animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
-					}
-				},
-				'rotate-slow': {
-					'0%': {
-						transform: 'rotate(0deg)'
-					},
-					'100%': {
-						transform: 'rotate(360deg)'
-					}
-				},
+				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
 				'pulse-subtle': 'pulse-subtle 3s infinite',
-				'float': 'float 3s ease-in-out infinite',
-				'slide-in-right': 'slide-in-right 0.5s forwards',
-				'slide-in-left': 'slide-in-left 0.5s forwards',
-				'bounce-light': 'bounce-light 2s ease-in-out infinite',
-				'rotate-slow': 'rotate-slow 8s linear infinite',
 			},
 			fontFamily: {
 				'display': ['Poppins', 'sans-serif'],
