@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,10 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Bandiwala custom colors - updated for yellow/orange theme
-				'bandiwala-yellow': '#FBBF24', // Amber-400
-				'bandiwala-orange': '#F97316', // Orange-500
-				'bandiwala-brown': '#92400E', // Amber-800
+				// Bandiwala custom colors
+				'bandiwala-orange': '#F97316',
+				'bandiwala-red': '#DC2626',
+				'bandiwala-brown': '#92400E',
+				'bandiwala-green': '#16A34A',
+				'bandiwala-yellow': '#FBBF24',
 				'bandiwala-bg': '#FFFBF5',
 			},
 			borderRadius: {
